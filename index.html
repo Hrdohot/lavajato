@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carregando…</title>
+<meta name="description" content="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c3 4 6 7.5 6 11.5a6 6 0 1 1-12 0C6 9.5 9 6 12 2z" fill="#0F6E6A"/></svg>
+      <span data-bind="brand.name">Maré</span>
+    </a>
+    <nav class="nav-links" id="nav-links"></nav>
+    <a href="#unidade" class="btn btn-primary nav-cta" id="nav-cta">Agendar pelo WhatsApp</a>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menu">☰</button>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <div id="mobile-links"></div>
+    <a href="#unidade" class="btn btn-primary" id="mobile-cta">Agendar pelo WhatsApp</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow" id="hero-eyebrow"></div>
+        <h1 id="hero-title"></h1>
+        <p class="lead" id="hero-lead"></p>
+        <div class="hero-actions">
+          <a href="#unidade" class="btn btn-primary" id="hero-cta-primary">Agendar pelo WhatsApp</a>
+          <a href="#planos" class="btn btn-ghost">Ver planos mensais</a>
+        </div>
+      </div>
+      <div class="hero-art" id="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 360" fill="none">
+          <path class="wave-path" d="M10 260 C 80 220, 110 300, 180 260 S 300 200, 390 240" />
+          <path class="wave-path" d="M10 300 C 90 270, 120 330, 190 300 S 300 260, 390 290" />
+          <path class="wave-path accent" d="M30 90 L 150 90 M 40 110 L 130 110 M 50 130 L 110 130" />
+        </svg>
+      </div>
+    </div>
+    <div class="stat-bar">
+      <div class="wrap stat-grid" id="stats"></div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Serviços</div>
+        <div>
+          <h2>Cada serviço no ponto certo, sem enrolação.</h2>
+          <p class="desc">Do básico ao acabamento de estética — escolha o que seu carro precisa hoje.</p>
+        </div>
+      </div>
+      <div id="services-list"></div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="section plans dark" id="planos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Planos mensais</div>
+        <div>
+          <h2>Carro sempre limpo, sem precisar lembrar de agendar.</h2>
+          <p class="desc">Assinaturas para quem usa o carro todo dia e não quer pensar em lavagem.</p>
+        </div>
+      </div>
+      <div class="plan-grid" id="plans-grid"></div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section" id="como-funciona">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Como funciona</div>
+        <div><h2>Três passos, do agendamento até a retirada.</h2></div>
+      </div>
+      <div class="steps" id="steps-list"></div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section" id="depoimentos" style="background:var(--espuma-2);">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Depoimentos</div>
+        <div><h2>Quem já deixou o carro com a gente.</h2></div>
+      </div>
+      <div id="testimonials-list"></div>
+    </div>
+  </section>
+
+  <!-- CTA / UNIDADE -->
+  <section class="section cta-section" id="unidade">
+    <div class="wrap cta-grid">
+      <div>
+        <h2>Marque sua lavagem para hoje mesmo.</h2>
+        <p>Chegando sem hora marcada também atendemos, conforme disponibilidade do pátio.</p>
+        <a href="#" class="btn btn-dark" id="cta-whatsapp" style="margin-top:26px;background:#fff;color:var(--agua-escura);">Chamar no WhatsApp</a>
+      </div>
+      <div class="info-list" id="contact-info"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand" id="foot-brand">Maré</div>
+      <div class="foot-links" id="foot-links"></div>
+    </div>
+    <div class="foot-row">
+      <div id="foot-copy"></div>
+      <div id="foot-address"></div>
+    </div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
